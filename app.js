@@ -67,7 +67,7 @@ const pintarTareas = () => {
         clone.querySelector('p').textContent = tarea.texto
 
         if(tarea.estado){
-            //clone.querySelector('.alert').classList.replace('alert-warning', 'alert-primary')
+            clone.querySelector('.alert').classList.replace('alert-warning', 'alert-primary')
             //clone.querySelectorAll('.icons')[0].classList.replace('check-icons', 'changes-icons')
             clone.querySelector('p').style.textDecoration = 'line-through'
         }
