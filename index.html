@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+<body>
+    <div class="grid place-items-center m-6">
+        <h1 class="text-center">ToDo App</h1>
+        <form action="" class="grid place-items-center" id="formulario">
+            <input 
+                type="text" 
+                placeholder="Ingrese tarea" 
+                class="m-1 block rounded w-80" 
+                id="input"
+                autofocus
+            >
+            <button class="m-2 bg-blue-400 block rounded-lg w-80 h-10 text-white">Agregar</button>
+        </form>
+        <div id="lista-tareas" class="w-full"></div>
+    </div>
+    
+    <template id="template">
+        <div class="alert alert-warning flex justify-between items-center m-4 bg-emerald-200 h-12 p-2">
+            <p class="m-0">Tarea #1</p>
+            <h3>
+                <span class="icons material-icons check-icons" role="button">
+                    check_circle
+                </span>
+                <span class="icons material-icons delete-icons" role="button">
+                    delete
+                </span>
+                <span class="material-icons changes-icons" role="button">
+                    published_with_changes
+                </span>
+            </h3>
+        </div>
+    </template>
+
+    <script src="./app.js"></script>
+</body>
+</html>
